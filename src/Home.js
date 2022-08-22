@@ -12,6 +12,10 @@ export default function Home(props) {
         buttonList.push(<StarButton key={item} value={item}/>)
     });
 
+    // TODO: Decide if the state of the buttons should be managed by the Home component 
+    //       or by the individuals buttons in the StarButton component, and also if 
+    //       it's worth to convert these function components into class components.
+    // TODO: Learn more about useState() hook.
 
     return (
     <div className="max-w-md bg-neutral-very-dark-blue flex flex-col rounded-3xl p-8">
