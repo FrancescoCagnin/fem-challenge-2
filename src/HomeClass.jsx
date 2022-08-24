@@ -51,18 +51,18 @@ class HomeClass extends React.Component {
 
         if (this.state.submitted === false) {
           return (
-                <div className="max-w-md bg-neutral-very-dark-blue flex flex-col rounded-3xl p-8">
+                <div className="sm:max-w-md max-w-sm mx-4 sm:m-0 bg-neutral-very-dark-blue flex flex-col rounded-3xl p-6">
                   <div className="p-4 max-w-max bg-neutral-dark-blue rounded-full grid place-items-center">
                     <img src={StarLogo} alt="StarLogo" />
                   </div>
-                  <h1 className="text-white font-overpass text-3xl pt-6 tracking-normal">
+                  <h1 className="text-white font-overpass font-bold text-3xl pt-6 tracking-normal">
                     How did we do?
                   </h1>
-                  <p className="text-neutral-light-grey font-overpass text-default-p pr-3 py-2 my-3 mb-6">
+                  <p className="text-neutral-light-grey font-overpass sm:text-default-p text-sm pr-3 py-2 my-3 mb-6">
                     Please let us know how we did with your support request. All feedback is
                     appreaciated to help us improve our offering!
                   </p>
-                  <div className="flex gap-6 flex-grow justify-between items-center" >
+                  <div className="flex  flex-wrap gap-1 justify-around items-center" >
                     {this.buttonList}
                   </div>
                   <button onClick={() => {this.setState({submitted: true})}} className="font-overpass text-white text-md bg-primary-orange rounded-full py-3 mt-6 tracking-widest hover:bg-white hover:text-primary-orange">SUBMIT</button>
@@ -70,7 +70,7 @@ class HomeClass extends React.Component {
                 )
         } else {
           return (
-            <div className="max-w-md bg-neutral-very-dark-blue flex flex-col rounded-3xl p-8 items-center">
+            <div className="sm:max-w-md max-w-sm mx-4 sm:m-0 bg-neutral-very-dark-blue flex flex-col rounded-3xl items-center p-6">
               <div className="p-6 max-w-max grid place-items-center" >
                 <img src={PhoneLogo} alt="Thank You!" />
               </div>
