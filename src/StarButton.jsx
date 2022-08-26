@@ -2,7 +2,9 @@ export default function StarButton(props) {
 
     const inheritedHandleClick = props.onClick;
 
-    if (props.isSelected === false) {
+    console.log(props.value, props.isSelected)
+
+    if (props.isSelected !== props.value) {
         return (
         <button className="w-12 h-12 text-center font-overpass text-neutral-light-grey
          bg-neutral-dark-blue rounded-full grid items-center hover:bg-neutral-medium-grey hover:text-white cursor-pointer"
